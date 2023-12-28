@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendations for Traveling in Japan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/富士山2.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+        <h1>2024 Recommendations for Traveling in Japan</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> Traveling in Japan</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> Member Login</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-book"></i> Schedule Reservation</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-address-book"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>
+          Leisure Spaces, Special Holidays<br />Plan a Relaxing Trip to Japan to
+          Unwind and Rejuvenate
+        </h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>Theme for Fun and Play</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/北海道雪景.jpg" alt="北海道雪景" />
+            <p>Hokkaido Snowscapes, Breathtaking Beauty</p>
+          </div>
+          <div class="circle">
+            <img src="./images/日本壽司.jpg" alt="日本壽司" />
+            <p>Authentic Sushi and Culinary Delights in Japan</p>
+          </div>
+          <div class="circle">
+            <img src="./images/富士山.jpg" alt="富士山" />
+            <p>Scenic Views of Mount Fuji and Hot Springs</p>
+          </div>
+          <div class="circle">
+            <img src="./images/清水寺.jpg" alt="清水寺" />
+            <p>Kiyomizu-dera in Kyoto, A Thousand-Year-Old City</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>
+          Starting to plan the itinerary today, finding the most suitable
+          solution。
+        </h3>
+      </section>
+
+      <section class="google-map">
+        <h3>Geographical Location of Japan</h3>
+        <p>
+          Japan is located in Northeast Asia, bordered to the east by the
+          Pacific Ocean, and surrounded to the west by the Sea of Japan, the
+          Korea Strait, the East China Sea, Siberia on the Eurasian continent,
+          the Korean Peninsula, and mainland China. To the south, it is adjacent
+          to the Philippine Sea, Taiwan, and the Mariana Islands, while to the
+          north, it is bordered by the Soya Strait, the Sea of Okhotsk, and the
+          Kuril Islands. Japan experiences a pleasant climate throughout the
+          year, with distinct seasons. In the south, the weather is mild, while
+          it becomes progressively colder towards the north. Particularly in
+          winter, the northwest monsoon brings heavy snowfall on the Sea of
+          Japan side. On the other hand, the Pacific side continues to
+          experience dry and clear weather known as 'winter clear.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5300755.760441594!2d137.10323600911116!3d35.18148688884259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1664253921541!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="logo" />
+        <h3>2024 Recommendations for Traveling in Japan</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
